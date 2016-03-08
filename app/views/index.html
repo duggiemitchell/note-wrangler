@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="NoteWrangler">
+  <head>
+    <title>Note Wrangler</title>
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/styles/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="containter-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="#/">NoteWrangler</a>
+          </div>
+        </div>
+<!--navigation controller-->
+        <nw-page-nav></nw-page-nav>
+      </div>
+    </nav>
+
+    <!-- directive to load routes-->
+    <div ng-view class="container-fluid"></div>
+
+  </body>
+
+  <!-- vendor javascript-->
+
+  <script src="assets/javascript/vendor/angular.js"></script>
+  <script src="assets/javascript/vendor/angular-route.js"></script>
+  <script src="assets/javascript/vendor/angular-resource.js"></script>
+  <script src="assets/javascript/vendor/jquery-2.2.1.min.js"></script>
+  <script src="assets/javascript/vendor/bootstrap.min.js"></script>
+  <script src="assets/javascript/vendor/ngGravatar.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+
+  <!-- App javascript -->
+  <script src="assets/javascript/app.js"></script>
+  <script src="assets/javascript/routes.js"></script>
+  <!-- Directives -->
+  <script src="assets/javascript/directives/nwPageNav.js"></script>
+  <script src="assets/javascript/directives/nwCategorySelector.js"></script>
+  <script src="assets/javascript/directives/title.js"></script>
+
+  <!-- Controllers -->
+  <script src="assets/javascript/controllers/notesIndexController.js"></script>
+  <script src="assets/javascript/controllers/notesShowController.js"></script>
+  <script src="assets/javascript/controllers/notesEditController.js"></script>
+  <script src="assets/javascript/controllers/notesCreateController.js"></script>
+  <script src="assets/javascript/controllers/usersIndexController.js"></script>
+  <script src="assets/javascript/controllers/usersShowController.js"></script>
+
+  <!-- Filters -->
+  <script src="assets/javascript/filters/categoryFilter.js"></script>
+
+  <!-- Services -->
+  <script src="assets/javascript/services/notes.js"></script>
+  <script src="assets/javascript/services/users.js"></script>
+  <script src="assets/javascript/services/category.js"></script>
+
+</html>

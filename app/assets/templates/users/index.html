@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row">
+    <div ng-repeat="user in users" class="col-md-4">
+      <h2>
+        <gravatar email="user.email"></gravatar><a ng-href="#/users/{{user.id}}">{{user.name}}</a>
+      </h2>
+      <p>
+      {{user.site}}
+      </p>
+    </div>
+  </div>
+</div>

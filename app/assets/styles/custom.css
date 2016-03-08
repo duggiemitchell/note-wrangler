@@ -1,0 +1,28 @@
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #446CB3;
+}
+.fa-user {
+  color: #F4B350;
+}
+.main-body {
+  background-color: #D2D7D3;
+}
+.navbar-brand a {
+  color: #336E7B;
+  font-family: "Allura", cursive;
+  font-size: 30px;
+}
+.nw-category-selector {
+  padding-top: 10px;
+}
+
+.button-success {
+  background-color: #9AB87A;
+  background-image: none;
+}
+.active {
+  background-color: #FFED66;
+}
